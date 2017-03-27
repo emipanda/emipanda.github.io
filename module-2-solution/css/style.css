@@ -118,6 +118,7 @@ p{
   	width: 17%;
   }
 }
+/********** Phone **********/
 @media (max-width: 767px) {
 	#s1 ,#s2, #s3 {
     width: 93.5%;
