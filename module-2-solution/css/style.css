@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body{
+	font-size: 100%;
+}
+h1 {
+	color: green;
+	font-family: "Comic Sans MS";
+	text-align: center;
+
+}
+h2 {
+	font-family: Impact; 
+	border: solid;
+}
+section{
+	background-color: gray;
+	border: solid;
+    border-color: orange;
+    overflow: hidden;
+
+}
+p{
+	background-color: gray;
+	margin: 0;
+	text-align: left;
+	float: right;
+	font-family: cursive;
+	padding-left:15px;
+	padding-right: 15px;
+
+	
+}
+#hd1, #hd2, #hd3{
+ text-align: center;
+ margin-top: 0px;
+ margin-bottom: 10px;
+ float: right;
+ display: inline-block;
+ width: 33%;
+}
+
+#hd1{
+	background-color: pink;
+
+
+}
+#hd2{
+	background-color: red;
+
+
+}
+#hd3{
+	background-color: yellow;
+
+}
+
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+  #s1 {
+    width: 30%;
+    height: 180px;
+    border: solid;
+    border-color: orange;
+    float: left;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    position: relative;
+  }
+  #s2 {
+    width: 30%;
+    height: 180px;
+    border: solid;
+    border-color: orange;
+    float: left;
+    margin-left: 1.8%;
+    position: relative;
+  }
+  #s3 {
+    width: 30%;
+    height: 180px;
+    
+    float: right;
+    margin-right: 1.8%;
+    margin-left: 1.5%;
+    position: relative;
+  }
+}
+
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #s1 {
+    width: 45%;
+    height: 180px;
+    float: left;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    position: relative;
+  }
+  #s2 {
+    width: 45%;
+    height: 180px;
+    float: left;
+    margin-left: 1.8%;
+    position: relative;
+  }
+  #s3 {
+    width: 93.5%;
+    height: 180px;
+    float: right;
+    margin-top: 2.5%;
+    margin-left: 3px;
+    margin-right: 5%;
+}
+  #hd3 {
+  	width: 17%;
+  }
+}
+@media (max-width: 767px) {
+	#s1 ,#s2, #s3 {
+    width: 93.5%;
+    height: 180px;
+    margin-top: 2.5%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    position: relative;
+  }
+}
