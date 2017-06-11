@@ -10,12 +10,14 @@ body {
   background-color: #BA3A3A;
   border-radius: 0;
   border: 0;
+
 }
 .container {
   margin: 0;
 }
+
 .navbar-brand {
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .navbar-brand h1 { /* Restaurant name */
@@ -37,56 +39,91 @@ body {
   text-transform: uppercase;
   font-size: .7em;
   margin-top: 15px;
-  font-family: 'Raleway', sans-serif;
-
 }
 .navbar-brand p span { /* Star-K */
   vertical-align: middle;
 }
-#menu-title {
+
+#nav-list a {
+  color: white;
   text-align: center;
-  float: none;
-  margin: 0 auto;
 }
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+  background-color: #ee2c2c;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -50px;
+}
+
 #main-content {
-  text-align: center;
   margin-top: 50px; 
   margin-left: 212px;
+  margin: auto;
 }
 #d1{
   color: black;
   font-weight: bold; 
   border: 2px solid black;
   background-color: grey;
+
+
 }
 #d1  > p{
   color: black;
   font-weight: normal;
+
 }
-.col-centered{
-    float: none;
-    margin: 0 auto;
+#d1 > h1{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }
 
+#nav-brand{
+  float: left;
+  margin-right: 0;
+}
+/*#menu-title{
+  text-align: center;
+}*/
 /********** Browser **********/
 
 @media (min-width: 992px) {
-  
+    #nav-list{
+      visibility: hidden;
+    }
+/*    #d1{
+      width: 2000px;
+    }*/
   }
-
-
 
 /********** Tablet **********/
 @media (min-width: 768px) and (max-width: 991px) {
-   
+  #nav-list{
+   visibility: hidden;
+    }
+    #d1{
+
+    }
   }
 
 
 /********** Phone **********/
 @media (max-width: 767px) {
   /* Header */
+
   .navbar-brand {
-    padding-top: 10px;
+    padding-top: 35px;
     height: 80px;
   }
   .navbar-brand h1 { /* Restaurant name */
@@ -101,6 +138,17 @@ body {
     font-size: 1em;
     margin-right: 5px;
   }
+  #nav-list a:hover {
+      background-color:blue;
+    }
+  .divider {
+      height: 1px;
+      margin: 9px 0;
+      overflow: hidden;
+      background-color: #e5e5e5;
+  }
 
   /* End Header */
 }
+/* END HEADER */
+
